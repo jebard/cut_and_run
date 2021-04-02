@@ -1,0 +1,43 @@
+{
+    "raw_fastq_gz_dir": "",
+    "meta_file": "metadata.txt",
+    "tool_version":
+    {
+        "fastx": "0.0.13",
+        "cutadapt": "1.16",
+        "samtools": "1.7",
+        "bowtie2": "2.4.1",
+    },
+    "file_names":
+    {
+        "mkdir_done": "mkdir.done",
+        "consensus_done": "consensus.done",
+    },
+    "dir_names":
+    {
+        "trimmed_dir": "outputs/trimmed",
+        "mapped_dir": "outputs/mapping",
+        "sorted_dir": "outputs/sorted",
+        "mpileup_dir": "outputs/pileups",
+        "varscan_dir": "outputs/varscan",
+        "consensus_dir": "outputs/consensus",
+        "filtered_dir": "outputs/filtered"
+    },
+    "params":
+    {
+        "bowtie2":
+            {
+            "threads": "4",
+            "all": "-a",
+            "bowtie2_reference":""
+            },
+        "deeptools":
+            {
+            "cores": "4"
+            }
+        "picard":
+            {
+            "picard_path": "/projects/academic/gbcstaff/utils/picard/picard-2.10.0/"
+            }
+    }
+}
