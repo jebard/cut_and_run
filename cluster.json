@@ -4,9 +4,11 @@
 	"cluster": "faculty",
         "partition": "gbc",
 	"qos":"gbc",
-        "time": "00:30:00",
+        "time": "05:00:00",
+	"n" : 6,
         "nodes": 1,
-        "ntasks-per-node": 1
+        "ntasks-per-node": 6,
+        "mem": "24G"
     },
     "join":
     {
@@ -24,9 +26,12 @@
     {
         "time": "01:00:00"
     },
-    "mapping":
+    "map":
     {
-        "time": "03:00L00"
+        "time": "03:00:00",
+        "ntasks-per-node": 6,
+        "mem": "24G",
+	"n" : 4
     }
 }
 

@@ -1,0 +1,5 @@
+
+jobs: 100
+cluster: sbatch
+use-conda: true
+cluster: "sbatch --partition gbc --cluster faculty --qos gbc --account gbcstaff -t {resources.time_min} --mem={resources.mem_mb} -c {resources.cpus}"
