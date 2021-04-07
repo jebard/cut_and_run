@@ -33,7 +33,7 @@ Snakemake Cut and Run Pipeline
 
 ### The use of --latency-wait allows for SLURM to catch up writing the files and posting the file handles so Snakemake can see them.
 
-    `snakemake --latency-wait 120 -p -j 100 --cluster-config cluster.json --cluster "sbatch --partition gbc --cluster faculty --qos gbc --account gbcstaff"`
+    `snakemake --latency-wait 120 -p -j 100 --profile slurm`
    
 
-7. Pipeline should result in peak files
+7. Pipeline should result in bigwig files
